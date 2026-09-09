@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Desafio02</string>
+    <string name="app_name">Traveller</string>
+    <string name="main_title">Popular destinations</string>
 </resources>

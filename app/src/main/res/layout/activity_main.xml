@@ -8,12 +8,31 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textApp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/spacing_default"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_h1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDestinationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_default"
+        android:text="@string/main_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_h2"
+        app:layout_constraintTop_toBottomOf="@+id/textApp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_default"
+        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
