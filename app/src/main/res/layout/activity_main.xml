@@ -32,10 +32,24 @@
         android:textColor="@color/on_background"
         app:layout_constraintTop_toBottomOf="@+id/textApp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_default"
-        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle" />
+        android:text="@string/btn_add"
+        android:textSize="@dimen/text_normal"
+        android:backgroundTint="@color/accent"
+        app:icon="@drawable/ic_add"
+        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/destinationList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_default"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
