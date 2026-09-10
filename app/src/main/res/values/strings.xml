@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Traveller</string>
-    <string name="main_title">Popular destinations</string>
+    <string name="main_title">Destinations</string>
     <string name="btn_add">New</string>
 </resources>

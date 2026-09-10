@@ -3,6 +3,7 @@
     <style name="Base.Theme.Desafio02" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorSecondary">@color/accent</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColorPrimary">@color/text_primary</item>
@@ -10,6 +11,8 @@
         <item name="colorOnPrimary">@color/on_primary</item>
         <item name="colorOnSecondary">@color/on_secondary</item>
         <item name="colorOnBackground">@color/on_background</item>
+        <item name="android:fontFamily">@font/bpmfhuninn_regular</item>
+        <item name="fontFamily">@font/bpmfhuninn_regular</item>
     </style>
 
     <style name="Theme.Desafio02" parent="Base.Theme.Desafio02" />

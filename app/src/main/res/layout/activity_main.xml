@@ -11,12 +11,12 @@
         android:id="@+id/textApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/spacing_default"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="@dimen/text_h1"
-        android:background="@color/primary"
-        android:textColor="@color/on_primary"
+        android:textSize="@dimen/text_h2"
+        app:fontFamily="@font/gveretlevin_regular"
+        android:textColor="@color/primary_variant"
+        android:background="@color/primary_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,11 +25,12 @@
         android:id="@+id/textDestinationTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_default"
         android:text="@string/main_title"
+        android:padding="@dimen/spacing_default"
         android:textAlignment="center"
-        android:textSize="@dimen/text_h2"
-        android:textColor="@color/on_background"
+        android:textSize="@dimen/text_h1"
+        android:textColor="@color/on_primary"
+        android:background="@color/primary"
         app:layout_constraintTop_toBottomOf="@+id/textApp" />
 
     <com.google.android.material.button.MaterialButton
@@ -39,8 +40,10 @@
         android:layout_marginTop="@dimen/spacing_default"
         android:text="@string/btn_add"
         android:textSize="@dimen/text_normal"
+        android:textColor="@color/on_secondary"
         android:backgroundTint="@color/accent"
         app:icon="@drawable/ic_add"
+        app:iconTint="@color/on_secondary"
         app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
