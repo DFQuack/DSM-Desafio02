@@ -6,4 +6,5 @@
     <dimen name="spacing_default">10dp</dimen>
     <dimen name="spacing_big">20dp</dimen>
     <dimen name="input_height">48dp</dimen>
+    <dimen name="radius_default">12dp</dimen>
 </resources>
