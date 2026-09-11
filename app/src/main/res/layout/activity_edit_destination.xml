@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".AddDestinationActivity">
+    tools:context=".EditDestinationActivity">
 
     <TextView
         android:id="@+id/textDestinationTitle"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/spacing_default"
         android:background="@color/primary"
-        android:text="@string/new_dest_title"
+        android:text="@string/title_add_dest"
         android:textAlignment="center"
         android:textColor="@color/on_primary"
         android:textSize="@dimen/text_h1"

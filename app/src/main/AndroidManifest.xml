@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Desafio02">
         <activity
-            android:name=".AddDestinationActivity"
+            android:name=".EditDestinationActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

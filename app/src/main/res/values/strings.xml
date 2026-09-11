@@ -2,7 +2,8 @@
     <string name="app_name">Traveller</string>
     <string name="main_title">Destinations</string>
     <string name="btn_new_dest">New</string>
-    <string name="new_dest_title">New destination</string>
+    <string name="title_add_dest">New destination</string>
+    <string name="title_update_dest">Update destination</string>
     <string name="lbl_dest_name">Name</string>
     <string name="lbl_country">Country</string>
     <string name="lbl_price">Price</string>
