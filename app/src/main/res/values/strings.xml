@@ -11,4 +11,9 @@
     <string name="lbl_image">Upload image</string>
     <string name="img_preview">Image preview</string>
     <string name="btn_save_dest">Save</string>
+    <string name="price_format">$%.2f</string>
+    <string name="error_required_fields">Name and price are required</string>
+    <string name="error_invalid_price">Enter a valid price</string>
+    <string name="error_loading">Couldn\'t load destinations</string>
+    <string name="error_saving">Couldn\'t save destination</string>
 </resources>
