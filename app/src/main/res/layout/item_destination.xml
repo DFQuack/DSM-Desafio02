@@ -27,6 +27,13 @@
             android:textSize="@dimen/text_h2"
             android:textColor="@color/text_primary" />
         <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/spacing_default"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_primary" />
+        <TextView
             android:id="@+id/tvPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
