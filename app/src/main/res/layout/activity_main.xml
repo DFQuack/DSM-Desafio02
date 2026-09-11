@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textApp"
+        android:id="@+id/tvApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textDestinationTitle"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_title"
@@ -32,7 +32,7 @@
         android:textSize="@dimen/text_h1"
         android:textColor="@color/on_primary"
         android:background="@color/primary"
-        app:layout_constraintTop_toBottomOf="@+id/textApp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvApp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAdd"
@@ -45,7 +45,7 @@
         android:backgroundTint="@color/accent"
         app:icon="@drawable/ic_add"
         app:iconTint="@color/on_secondary"
-        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

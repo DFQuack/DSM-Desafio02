@@ -9,7 +9,7 @@
     tools:context=".EditDestinationActivity">
 
     <TextView
-        android:id="@+id/textDestinationTitle"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/spacing_default"
@@ -21,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/llForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_big"
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/spacing_big"
-        app:layout_constraintTop_toBottomOf="@+id/textDestinationTitle">
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
 
         <TextView
             android:layout_width="match_parent"
@@ -114,6 +114,7 @@
             android:src="@drawable/ic_photo" />
 
         <Button
+            android:id="@+id/btnPickImage"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/input_height"
             android:layout_gravity="center"
@@ -125,6 +126,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/input_height"
         android:layout_marginTop="@dimen/spacing_big"
@@ -134,6 +136,6 @@
         android:textSize="@dimen/text_normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/llForm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
