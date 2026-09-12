@@ -37,7 +37,14 @@
             android:id="@+id/tvPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/spacing_default"
+            android:paddingHorizontal="@dimen/spacing_default"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_primary" />
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/spacing_default"
             android:textSize="@dimen/text_normal"
             android:textColor="@color/text_primary" />
     </LinearLayout>

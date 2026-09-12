@@ -2,22 +2,39 @@ package sv.edu.udb.desafio02
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.getString
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import sv.edu.udb.desafio02.R.string
 import sv.edu.udb.desafio02.databinding.ItemDestinationBinding
 import sv.edu.udb.desafio02.model.Destination
+import java.io.File
 
 class DestinationAdapter(
-    private val items: MutableList<Destination> = mutableListOf(),
-    private val onClick: (Destination) -> Unit
+    private val onItemClick: (Destination) -> Unit
 ): ListAdapter<Destination, DestinationAdapter.DestinationViewHolder>(DiffCallback) {
     // ViewHolder - Caches the view for performance
-    class DestinationViewHolder(val binding: ItemDestinationBinding) :
-        RecyclerView.ViewHolder(binding.root)
+    inner class DestinationViewHolder(val binding: ItemDestinationBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(destination: Destination) {
+            // Sets the data for the view
+            binding.tvName.text = destination.name
+            binding.tvCountry.text = destination.country
+            binding.tvPrice.text = binding.root.context.getString(
+                R.string.price_format, destination.price
+            )
+            binding.tvDescription.text = destination.description
+            // Loads the image
+            Glide.with(binding.root)
+                .load(File(destination.imagePath))
+                .placeholder(R.drawable.ic_photo)
+                .centerCrop()
+                .into(binding.ivDestImage)
+
+            binding.root.setOnClickListener { onItemClick(destination) }
+        }
+        }
 
     // Creates new views
     override fun onCreateViewHolder(
@@ -35,23 +52,7 @@ class DestinationAdapter(
         holder: DestinationViewHolder,
         position: Int
     ) {
-        val item = items[position]
-        val context = holder.itemView.context
-        val binding = holder.binding
-        // Sets the data for the view
-        binding.tvName.text = item.name
-        binding.tvCountry.text = item.country
-        binding.tvPrice.text = getString(context, string.price_format).format(item.price)
-        // Loads the image
-        Glide.with(context)
-            .load(item.imageUrl)
-            .placeholder(R.drawable.ic_photo)
-            .centerCrop()
-            .into(holder.binding.ivDestImage)
-        // Attaches the click listener
-        holder.itemView.setOnClickListener {
-            onClick(item)
-        }
+        holder.bind(getItem(position))
     }
 
     // Only updates the items that have changed
