@@ -181,6 +181,14 @@ class EditDestinationActivity : AppCompatActivity() {
             ).show()
             return
         }
+        if (description.isEmpty() || description.length < 20) {
+            Snackbar.make(
+                binding.main,
+                getString(R.string.error_invalid_description),
+                Snackbar.LENGTH_SHORT
+            ).show()
+            return
+        }
 
         // Image validation
         val currentImagePath = imagePath

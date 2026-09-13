@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     // Listener for Firebase data changes
     private val dataListener = object : ValueEventListener {
-        // snapshot represents de /destinations node
+        // snapshot represents the /destinations node
         override fun onDataChange(snapshot: DataSnapshot) {
             // Convert the data to a list of Destination objects
             val destinations = snapshot.children.mapNotNull { child ->

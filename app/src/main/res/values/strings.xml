@@ -14,6 +14,7 @@
     <string name="price_format">$%.2f</string>
     <string name="error_required_fields">Name and price are required</string>
     <string name="error_invalid_price">Enter a valid price</string>
+    <string name="error_invalid_description">The description must be at least 20 characters long</string>
     <string name="error_image_required">Please choose an image</string>
     <string name="error_loading">Couldn\'t load destination</string>
     <string name="error_saving">Couldn\'t save destination</string>
