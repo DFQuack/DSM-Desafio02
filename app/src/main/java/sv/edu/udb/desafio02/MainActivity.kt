@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
         // Tapping a card opens the EditDestinationActivity with the destination ID attached
         adapter = DestinationAdapter { destination ->
             val intent = Intent(this, EditDestinationActivity::class.java)
-            intent.putExtra("destinationId", destination.id)
+            intent.putExtra(EditDestinationActivity.DESTINATION_ID, destination.id)
             startActivity(intent)
         }
         binding.destinationList.layoutManager = LinearLayoutManager(this)
