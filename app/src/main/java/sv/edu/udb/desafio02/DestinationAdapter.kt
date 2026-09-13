@@ -30,6 +30,7 @@ class DestinationAdapter(
                 .load(File(destination.imagePath))
                 .placeholder(R.drawable.ic_photo)
                 .centerCrop()
+                .error(R.drawable.ic_photo)
                 .into(binding.ivDestImage)
 
             binding.root.setOnClickListener { onItemClick(destination) }
