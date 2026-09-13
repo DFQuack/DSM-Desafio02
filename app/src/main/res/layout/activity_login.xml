@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_height"
             android:layout_marginTop="@dimen/spacing_default"
-            android:importantForAutofill="no"
+            android:autofillHints="emailAddress"
             android:inputType="textEmailAddress"
             android:textColor="@color/text_primary"
             android:textSize="@dimen/text_normal" />
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_height"
             android:layout_marginTop="@dimen/spacing_default"
-            android:importantForAutofill="no"
+            android:autofillHints="password"
             android:inputType="textPassword"
             android:textColor="@color/text_primary"
             android:textSize="@dimen/text_normal" />
