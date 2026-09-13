@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         if (email.isEmpty() || password.isEmpty()) {
             Snackbar.make(
                 binding.main,
-                getString(R.string.error_required_fields),
+                getString(R.string.error_required_login_fields),
                 Snackbar.LENGTH_SHORT
             ).show()
             return
