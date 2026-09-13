@@ -23,15 +23,17 @@
     <string name="action_delete">Delete</string>
     <string name="action_cancel">Cancel</string>
     <string name="error_deleting">Couldn\'t delete destination</string>
-    <string name="login">Log in</string>
-    <string name="register">Register</string>
-    <string name="btn_to_register">Don\'t have an account? Register</string>
-    <string name="btn_to_login">Have an account already? Log in</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="action_logout">Log out</string>
+    <string name="btn_to_register">New here? Create an account</string>
+    <string name="btn_to_signin">Already have an account? Sign in</string>
     <string name="lbl_email">Email</string>
     <string name="lbl_password">Password</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="error_auth_failed">Authentication failed</string>
     <string-array name="country_list">
         <item>Mexico</item>
         <item>USA</item>

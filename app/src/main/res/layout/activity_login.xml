@@ -68,19 +68,19 @@
             android:textSize="@dimen/text_normal" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnPrimaryAction"
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_height"
             android:layout_gravity="center"
             android:layout_marginHorizontal="@dimen/spacing_big"
             android:layout_marginTop="@dimen/spacing_big"
             android:backgroundTint="@color/accent"
-            android:text="@string/login"
+            android:text="@string/action_sign_in"
             android:textColor="@color/on_primary"
             android:textSize="@dimen/text_normal" />
 
         <Button
-            android:id="@+id/btnToRegister"
+            android:id="@+id/btnToggleAction"
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_height"
             android:layout_gravity="center"

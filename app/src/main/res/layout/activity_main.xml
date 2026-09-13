@@ -34,6 +34,18 @@
         android:background="@color/primary"
         app:layout_constraintTop_toBottomOf="@+id/tvApp" />
 
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="@dimen/input_height"
+        android:layout_height="@dimen/input_height"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/action_logout"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:tint="@color/primary_variant" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
