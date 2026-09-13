@@ -18,6 +18,11 @@
     <string name="error_loading">Couldn\'t load destination</string>
     <string name="error_saving">Couldn\'t save destination</string>
     <string name="success_saving">Destination saved!</string>
+    <string name="confirm_delete_title">Delete destination?</string>
+    <string name="confirm_delete_message">Are you sure you want to delete \"%1$s\"? This can\'t be undone.</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="error_deleting">Couldn\'t delete destination</string>
     <string-array name="country_list">
         <item>Mexico</item>
         <item>USA</item>

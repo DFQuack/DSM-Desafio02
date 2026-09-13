@@ -11,6 +11,7 @@
         <item name="colorOnPrimary">@color/on_primary</item>
         <item name="colorOnSecondary">@color/on_secondary</item>
         <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorError">@color/delete_background</item>">
         <item name="android:fontFamily">@font/bpmfhuninn_regular</item>
         <item name="fontFamily">@font/bpmfhuninn_regular</item>
     </style>
